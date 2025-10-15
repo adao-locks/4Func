@@ -1,0 +1,38 @@
+<div class="romano-container">
+  <form class="romano-form" (ngSubmit)="converter()">
+    <h2>Conversor de Números Romanos</h2>
+
+    <div class="form-group">
+      <label for="valor">Valor</label>
+      <input
+        type="number"
+        id="valor"
+        name="valor"
+        placeholder="Digite um número (ex: 15)"
+        [(ngModel)]="valor"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="conversao">Tipo de Conversão</label>
+      <select id="conversao" name="conversao" [(ngModel)]="tipoConversao">
+        <option value="romano">Decimal → Romano</option>
+        <option value="decimal">Romano → Decimal</option>
+      </select>
+    </div>
+
+    <div class="form-group resultado">
+      <label for="resultado">Resultado</label>
+      <input
+        type="text"
+        id="resultado"
+        name="resultado"
+        [value]="resultado"
+        readonly
+      />
+    </div>
+
+    <button type="submit">Converter</button>
+  </form>
+</div>

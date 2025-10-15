@@ -1,0 +1,19 @@
+<nav class="menu">
+  <div class="menu-logo">
+    <span>4Func</span>
+  </div>
+
+  <ul class="menu-list">
+    <li
+      *ngFor="let item of menuItems"
+      class="menu-item"
+      (click)="navigate(item.route)"
+      routerLinkActive="active"
+    >
+      <span class="icon">{{ item.icon }}</span>
+      <span class="label">{{ item.label }}</span>
+    </li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>
