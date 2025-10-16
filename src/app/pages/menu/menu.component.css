@@ -81,3 +81,11 @@
 .menu-item:hover::after {
   width: 100%;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-left: 240px;
+}
