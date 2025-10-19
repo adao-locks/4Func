@@ -85,3 +85,7 @@ button:hover {
     transform: translateY(0);
   }
 }
+
+input {
+  width: 50%;
+}
