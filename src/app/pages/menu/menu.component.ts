@@ -13,8 +13,9 @@ import { RouterModule } from '@angular/router';
 export class MenuComponent {
   menuItems = [
     { icon: '🏠', label: 'Menu Principal', route: '/' },
-    { icon: '👥', label: 'Conversor Romano', route: '/romano' },
-    { icon: '⚙️', label: 'Conversor Binário', route: '/binario' },
+    { icon: '🏛️', label: 'Conversor Romano', route: '/romano' },
+    { icon: '🖥️', label: 'Conversor Binário', route: '/binario' },
+    { icon: '3️⃣', label: 'Regra de Três', route: '/regra_de_tres' },
   ];
 
   constructor(@Inject(Router) private router: Router) {}
