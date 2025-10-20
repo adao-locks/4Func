@@ -1,0 +1,38 @@
+<div class="morse-container">
+  <form class="morse-form" (ngSubmit)="converter()">
+    <h2>Conversor Morse</h2>
+
+    <div class="form-group">
+      <label for="valor">Valor</label>
+      <textarea
+        id="valor"
+        name="valor"
+        placeholder="Digite aqui..."
+        rows="6"
+        [(ngModel)]="valor"
+        required
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="conversao">Tipo de Conversão</label>
+      <select id="conversao" name="conversao" [(ngModel)]="tipoConversao">
+        <option value="morse">Morse → Alphabet</option>
+        <option value="unmorse">Alphabet → Morse</option>
+      </select>
+    </div>
+
+    <div class="form-group resultado">
+      <label for="resultado">Resultado</label>
+      <textarea
+        id="resultado"
+        name="resultado"
+        rows="6"
+        [value]="resultado"
+        readonly
+      ></textarea>
+    </div>
+
+    <button type="submit">Converter</button>
+  </form>
+</div>

@@ -10,9 +10,9 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './romano.component.css'
 })
 export class RomanoComponent {
-  valor = '';
-  tipoConversao = 'romano';
-  resultado = '';
+  tipoConversao: any;
+  resultado: string = '';
+  valor: string = '';
 
   converter() {
     if (this.tipoConversao === 'romano') {

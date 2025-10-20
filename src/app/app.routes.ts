@@ -6,4 +6,5 @@ export const routes: Routes = [
   { path: 'romano', loadComponent: () => import('./pages/romano/romano.component').then(m => m.RomanoComponent) },
   { path: 'binario', loadComponent: () => import('./pages/binario/binario.component').then(m => m.BinarioComponent) },
   { path: 'regra_de_tres', loadComponent: () => import('./pages/regra-de-tres/regra-de-tres.component').then(m => m.RegraDeTresComponent) },
+  { path: 'morse', loadComponent: () => import('./pages/morse/morse.component').then(m => m.MorseComponent) },
 ];1

@@ -16,6 +16,7 @@ export class MenuComponent {
     { icon: '🏛️', label: 'Conversor Romano', route: '/romano' },
     { icon: '🖥️', label: 'Conversor Binário', route: '/binario' },
     { icon: '3️⃣', label: 'Regra de Três', route: '/regra_de_tres' },
+    { icon: '📟', label: 'Conversor Morse', route: '/morse' },
   ];
 
   constructor(@Inject(Router) private router: Router) {}
