@@ -1,52 +1,17 @@
 <div class="romano-container">
-  <form class="romano-form" (submit)="calcularRegraDeTres()">
-    <h2>Conversor de Números Binários</h2>
+  <form class="romano-form" (ngSubmit)="calcularRegraDeTres()">
+    <h2>Calculadora de Regra de Três</h2>
 
     <div class="form-group">
-      <input
-        type="number"
-        id="valor1"
-        name="valor1"
-        placeholder="Valor 1"
-        [value]="valor1"
-        (input)="valor1 = $any($event.target).value1"
-        required
-      />
+      <input type="number" [(ngModel)]="valor1" name="valor1" placeholder="Valor 1" required />
       <p>→</p>
-      <input
-        type="number"
-        id="valor2"
-        name="valor2"
-        placeholder="Valor 2"
-        [value]="valor2"
-        (input)="valor2 = $any($event.target).value2"
-        required
-      />
+      <input type="number" [(ngModel)]="valor2" name="valor2" placeholder="Valor 2" required />
     </div>
 
     <div class="form-group">
-    </div>
-
-    <div class="form-group">
-      <input
-        type="number"
-        id="valor3"
-        name="valor3"
-        placeholder="Valor 3"
-        [value]="valor3"
-        (input)="valor3 = $any($event.target).value3"
-        required
-      />
+      <input type="number" [(ngModel)]="valor3" name="valor3" placeholder="Valor 3" required />
       <p>→</p>
-      <input
-        class="resultado"
-        type="text"
-        id="resultado"
-        name="resultado"
-        placeholder="Resultado"
-        [value]="resultadoRT"
-        readonly
-      />
+      <input class="resultado" type="text" [value]="resultadoRT" placeholder="Resultado" readonly />
     </div>
 
     <button type="submit">Converter</button>
