@@ -21,6 +21,7 @@ export class ArmstrongComponent {
       const digit = parseInt(char, 10);
       sum += Math.pow(digit, numDigits);
     }
+    this.resultado = sum === num ? 'É um número Armstrong' : 'Não é um número Armstrong';
     return sum === num;
   }
 }
