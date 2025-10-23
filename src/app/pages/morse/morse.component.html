@@ -1,5 +1,5 @@
-<div class="morse-container">
-  <form class="morse-form" (ngSubmit)="converter()">
+<div class="div-container">
+  <form class="div-form" (ngSubmit)="converter()">
     <h2>Conversor Morse</h2>
 
     <div class="form-group">
@@ -17,8 +17,8 @@
     <div class="form-group">
       <label for="conversao">Tipo de Conversão</label>
       <select id="conversao" name="conversao" [(ngModel)]="tipoConversao">
-        <option value="morse">Morse → Alphabet</option>
-        <option value="unmorse">Alphabet → Morse</option>
+        <option value="div">Morse → Alphabet</option>
+        <option value="undiv">Alphabet → Morse</option>
       </select>
     </div>
 

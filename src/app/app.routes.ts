@@ -7,4 +7,5 @@ export const routes: Routes = [
   { path: 'binario', loadComponent: () => import('./pages/binario/binario.component').then(m => m.BinarioComponent) },
   { path: 'regra_de_tres', loadComponent: () => import('./pages/regra-de-tres/regra-de-tres.component').then(m => m.RegraDeTresComponent) },
   { path: 'morse', loadComponent: () => import('./pages/morse/morse.component').then(m => m.MorseComponent) },
+  { path: 'armstrong', loadComponent: () => import('./pages/armstrong/armstrong.component').then(m => m.ArmstrongComponent) },
 ];1

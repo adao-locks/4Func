@@ -1,4 +1,4 @@
-.romano-container {
+.div-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,7 +6,7 @@
   width: 99vw;
 }
 
-.romano-form {
+.div-form {
   background: #fff;
   padding: 2.5rem;
   border-radius: 1rem;
@@ -19,7 +19,7 @@
   animation: fadeIn 0.5s ease-in-out;
 }
 
-.romano-form h2 {
+.div-form h2 {
   text-align: center;
   color: #2c5364;
   margin-bottom: 1rem;
