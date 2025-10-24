@@ -8,4 +8,5 @@ export const routes: Routes = [
   { path: 'regra_de_tres', loadComponent: () => import('./pages/regra-de-tres/regra-de-tres.component').then(m => m.RegraDeTresComponent) },
   { path: 'morse', loadComponent: () => import('./pages/morse/morse.component').then(m => m.MorseComponent) },
   { path: 'armstrong', loadComponent: () => import('./pages/armstrong/armstrong.component').then(m => m.ArmstrongComponent) },
+  { path: 'factoring', loadComponent: () => import('./pages/factoring/factoring.component').then(m => m.FactoringComponent) },
 ];1

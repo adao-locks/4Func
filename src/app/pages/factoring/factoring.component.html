@@ -1,0 +1,31 @@
+<div class="div-container">
+  <form class="div-form" (ngSubmit)="converter()">
+    <h2>Fatoração de Número</h2>
+
+    <div class="form-group">
+      <label for="valor">Valor</label>
+      <input
+        type="number"
+        id="valor"
+        name="valor"
+        placeholder="Digite aqui..."
+        [(ngModel)]="valor"
+        required
+      />
+    </div>
+
+    <div class="form-group resultado">
+      <label for="resultado">Resultado</label>
+      <input
+        type="text"
+        id="valor"
+        name="valor"
+        placeholder="Seu número é..."
+        [(ngModel)]="resultado"
+        required
+      />
+    </div>
+
+    <button type="submit">Converter</button>
+  </form>
+</div>
