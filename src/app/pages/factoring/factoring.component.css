@@ -83,3 +83,12 @@ button:hover {
     transform: translateY(0);
   }
 }
+
+.about-btn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  font-style: italic;
+}

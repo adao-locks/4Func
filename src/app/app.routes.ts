@@ -9,4 +9,5 @@ export const routes: Routes = [
   { path: 'morse', loadComponent: () => import('./pages/morse/morse.component').then(m => m.MorseComponent) },
   { path: 'armstrong', loadComponent: () => import('./pages/armstrong/armstrong.component').then(m => m.ArmstrongComponent) },
   { path: 'factoring', loadComponent: () => import('./pages/factoring/factoring.component').then(m => m.FactoringComponent) },
-];1
+  { path: 'about-factoring', loadComponent: () => import('./pages/about/factoring/factoring.component').then(m => m.AboutFactoringComponent) },
+];

@@ -1,0 +1,52 @@
+<div class="div-container">
+  <div class="div-form">
+    <H2>O que é fatoração</H2>
+      <p><b>Fatoração</b> é o processo de decompor um objeto matemático (número, polinômio, expressão algébrica, etc.) em um produto de fatores mais simples que, multiplicados entre si, reconstituem o objeto original. Em linguagem simples: “quais são os pedaços que, multiplicados, dão esse valor?”
+      <br><br>A seguir eu explico os dois sentidos mais comuns do termo e mostro métodos, exemplos e aplicações.</p>
+    <h3>Fatoração de números inteiros</h3>
+      <p><b>Definição:</b> decompor um inteiro 𝑛 > 1 em um produto de inteiros maiores que 1. O objetivo final costuma ser escrever 𝑛 como produto de números primos (fatores primos).</p>
+    <h4>Propriedade fundamental</h4>
+      <p>Teorema Fundamental da Aritmética (ou teoria da fatoração única) diz que todo inteiro 𝑛 > 1 tem uma decomposição única em primos, salvo a ordem dos fatores. Ex.: 60 = 2² x 3 x 5 - essa combinação é única.</p>
+    <h4>Métodos comuns</h4>
+    <ul>
+      <li>
+        <b>Divisão sucessiva (trial division):</b> testar divisores começando por 2, 3, 5, etc., dividindo enquanto possível e avançando. Prático para números pequenos.
+      </li>
+      <li>
+        <b>Árvore de fatores:</b> representação gráfica que facilita ver as divisões sucessivas.
+      </li>
+      <li>
+        <b>Agrupamento com primos:</b> extrair potências de 2, 3, etc.
+      </li>
+      <li>
+        <b>Algoritmos avançados:</b> Pollard's rho, crivo quadrático, crivo generalizado (usados para números muito grandes, p.ex. em criptografia). (Só citar nomes — implementação é complexa.)
+      </li>
+    </ul>
+    <h4>Exemplo passo a passo</h4>
+    <p>
+      Fatore <b>360:</b><br>
+      <b>360 ÷ 2 =</b> 180<br>
+      <b>180 ÷ 2 =</b> 90<br>
+      <b>90 ÷ 2 =</b> 45<br>
+      <b>45 ÷ 3 =</b> 15<br>
+      <b>15 ÷ 3 =</b> 5<br>
+      <b>5 ÷ 5 =</b> 1<br>
+      Logo, 360 = 2³ x 3² x 5.
+    </p>
+    <h4>Aplicações</h4>
+      <ul>
+        <li>
+          Criptografia (RSA): segurança baseada na dificuldade de fatorar grandes inteiros.
+        </li>
+        <li>
+          Teoria dos números, análise de divisores e MMC/MDC.
+        </li>
+        <li>
+          Simplificação de frações.
+        </li>
+        <li>
+          Determinação de propriedades aritméticas (quantidade de divisores, soma dos divisores, etc.).
+        </li>
+      </ul>
+  </div>
+</div>

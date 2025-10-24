@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-factoring',
   standalone: true,
-  imports: [ CommonModule, FormsModule ],
+  imports: [ CommonModule, FormsModule, RouterModule ],
   templateUrl: './factoring.component.html',
   styleUrl: './factoring.component.css'
 })
@@ -32,5 +33,11 @@ export class FactoringComponent {
     }
 
     this.resultado = `${this.valor} = ${fatores.join(' × ')}`;
+  }
+
+  constructor(@Inject(Router) private router: Router) {}
+
+  navigate() {
+    this.router.navigate(['/about-factoring']);
   }
 }
