@@ -1,18 +1,1 @@
-.div-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 98vh;
-}
-
-.div-form {
-  background: #fff;
-  padding: 2.5rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  animation: fadeIn 0.5s ease-in-out;
-}
+/* @import '../../../../styles.css' */

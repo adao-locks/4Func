@@ -10,7 +10,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './romano.component.css'
 })
 export class RomanoComponent {
-  tipoConversao: any;
+  tipoConversao: string = 'div';
   resultado: string = '';
   valor: string = '';
 
